@@ -70,6 +70,22 @@ func (st *oopsStacktrace) String(deepestFrame string) string {
 	return str
 }
 
+func (st *oopsStacktrace) Slice(deepestFrame string) []string {
+	s := []string{}
+	for _, frame := range st.frames {
+		if frame.file != "" {
+			currentFrame := frame.String()
+			if currentFrame == deepestFrame {
+				break
+			}
+
+			s = append(s, currentFrame)
+		}
+	}
+
+	return s
+}
+
 func (st *oopsStacktrace) Source() (string, []string) {
 	if len(st.frames) == 0 {
 		return "", []string{}

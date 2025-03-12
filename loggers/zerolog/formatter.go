@@ -12,6 +12,13 @@ func OopsStackMarshaller(err error) interface{} {
 	return err
 }
 
+func OopsStacSlicekMarshaller(err error) interface{} {
+	if typedErr, ok := oops.AsOops(err); ok {
+		return typedErr.StacktraceSlice()
+	}
+	return err
+}
+
 func OopsMarshalFunc(err error) interface{} {
 	if typedErr, ok := oops.AsOops(err); ok {
 		return zerologErrorMarshaller{err: typedErr}

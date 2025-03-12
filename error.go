@@ -311,6 +311,37 @@ func (o OopsError) Stacktrace() string {
 	return "Oops: " + strings.Join(blocks, "\nThrown: ")
 }
 
+func (o OopsError) StacktraceSlice() []string {
+	blocks := newOrderedSet[string]()
+	topFrame := ""
+
+	recursiveForStackSlice(o, func(e OopsError, isLast bool) {
+		if e.stacktrace != nil && len(e.stacktrace.frames) > 0 {
+			err := lo.TernaryF(e.err != nil, func() string { return e.err.Error() }, func() string { return "" })
+			msg := coalesceOrEmpty(e.msg, err, "Error")
+			block := e.stacktrace.Slice(topFrame)
+
+			blockLength := len(block)
+			prefix := lo.Ternary(isLast, "Oops", "Thrown")
+			for i := blockLength - 1; i >= 0; i-- {
+				b := block[i]
+				blocks.Add(fmt.Sprintf("==> %s", b))
+				if i == 0 {
+					blocks.Add(fmt.Sprintf("%s: %s", prefix, msg))
+				}
+			}
+
+			topFrame = e.stacktrace.frames[0].String()
+		}
+	})
+
+	if blocks.Len() == 0 {
+		return nil
+	}
+
+	return blocks.GetReverseOrdered()
+}
+
 // Sources returns the source fragments of the error.
 func (o OopsError) Sources() string {
 	blocks := [][]string{}
@@ -689,5 +720,18 @@ func recursive(err OopsError, tap func(OopsError)) {
 
 	if child, ok := AsOops(err.err); ok {
 		recursive(child, tap)
+	}
+}
+
+func recursiveForStackSlice(err OopsError, tap func(OopsError, bool)) {
+	child, ok := AsOops(err.err)
+	tap(err, err.err == nil || !ok)
+
+	if err.err == nil {
+		return
+	}
+
+	if ok {
+		recursiveForStackSlice(child, tap)
 	}
 }
