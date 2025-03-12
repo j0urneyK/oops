@@ -1,4 +1,4 @@
-module github.com/j0urneyK/oops/examples/logrus
+module github.com/j0urneyk/oops/examples/logrus
 
 go 1.21
 

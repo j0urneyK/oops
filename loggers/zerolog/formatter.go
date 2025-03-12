@@ -1,7 +1,7 @@
 package oopszerolog
 
 import (
-	"github.com/j0urneyK/oops"
+	"github.com/j0urneyk/oops"
 	"github.com/rs/zerolog"
 )
 

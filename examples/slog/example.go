@@ -7,7 +7,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/j0urneyK/oops"
+	"github.com/j0urneyk/oops"
 )
 
 // go run examples/slog/example.go | jq

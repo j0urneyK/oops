@@ -1,8 +1,8 @@
 package main
 
 import (
-	"github.com/j0urneyK/oops"
-	oopslogrus "github.com/j0urneyK/oops/loggers/logrus"
+	"github.com/j0urneyk/oops"
+	oopslogrus "github.com/j0urneyk/oops/loggers/logrus"
 	"github.com/sirupsen/logrus"
 )
 

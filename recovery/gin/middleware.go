@@ -2,7 +2,7 @@ package oopsrecoverygin
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/j0urneyK/oops"
+	"github.com/j0urneyk/oops"
 )
 
 func GinOopsRecovery() gin.HandlerFunc {

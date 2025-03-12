@@ -1,4 +1,4 @@
-module github.com/j0urneyK/oops/examples/log
+module github.com/j0urneyk/oops/examples/log
 
 go 1.21
 

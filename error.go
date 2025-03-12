@@ -575,7 +575,7 @@ func (o OopsError) ToMap() map[string]any {
 		}
 	}
 
-	if stacktrace := o.Stacktrace(); stacktrace != "" {
+	if stacktrace := o.StacktraceSlice(); len(stacktrace) > 0 {
 		payload["stacktrace"] = stacktrace
 	}
 

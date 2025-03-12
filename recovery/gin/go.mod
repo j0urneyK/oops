@@ -1,10 +1,10 @@
-module github.com/j0urneyK/oops/recovery/gin
+module github.com/j0urneyk/oops/recovery/gin
 
 go 1.21
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/j0urneyK/oops v1.9.0
+	github.com/j0urneyk/oops v1.9.0
 )
 
 require (

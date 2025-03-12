@@ -1,16 +1,16 @@
-module github.com/j0urneyK/oops/examples/zerolog
+module github.com/j0urneyk/oops/examples/zerolog
 
 go 1.21
 
 replace (
-	github.com/j0urneyK/oops => ../..
-	github.com/j0urneyK/oops/loggers/zerolog => ../../loggers/zerolog
+	github.com/j0urneyk/oops => ../..
+	github.com/j0urneyk/oops/loggers/zerolog => ../../loggers/zerolog
 )
 
 require (
 	github.com/rs/zerolog v1.31.0
-	github.com/j0urneyK/oops v0.0.0
-	github.com/j0urneyK/oops/loggers/zerolog v0.0.0
+	github.com/j0urneyk/oops v0.0.0
+	github.com/j0urneyk/oops/loggers/zerolog v0.0.0
 )
 
 require (

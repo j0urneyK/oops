@@ -4,8 +4,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/j0urneyK/oops"
-	oopszerolog "github.com/j0urneyK/oops/loggers/zerolog"
+	"github.com/j0urneyk/oops"
+	oopszerolog "github.com/j0urneyk/oops/loggers/zerolog"
 	"github.com/rs/zerolog"
 )
 

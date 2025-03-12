@@ -1,12 +1,12 @@
-module github.com/j0urneyK/oops/loggers/zerolog
+module github.com/j0urneyk/oops/loggers/zerolog
 
 go 1.21
 
-replace github.com/j0urneyK/oops => ../..
+replace github.com/j0urneyk/oops => ../..
 
 require (
 	github.com/rs/zerolog v1.31.0
-	github.com/j0urneyK/oops v0.0.0
+	github.com/j0urneyk/oops v0.0.0
 	github.com/stretchr/testify v1.10.0
 )
 

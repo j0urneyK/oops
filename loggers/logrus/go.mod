@@ -1,4 +1,4 @@
-module github.com/j0urneyK/oops/loggers/logrus
+module github.com/j0urneyk/oops/loggers/logrus
 
 go 1.21
 

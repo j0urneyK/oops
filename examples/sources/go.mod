@@ -1,4 +1,4 @@
-module github.com/j0urneyK/oops/examples/sources
+module github.com/j0urneyk/oops/examples/sources
 
 go 1.21
 
