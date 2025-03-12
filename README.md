@@ -1,13 +1,13 @@
 
 # Oops - Error handling with context, assertion, stack trace and source fragments
 
-[![tag](https://img.shields.io/github/tag/samber/oops.svg)](https://github.com/j0urneyK/oops/releases)
+[![tag](https://img.shields.io/github/tag/samber/oops.svg)](https://github.com/j0urneyk/oops/releases)
 ![Go Version](https://img.shields.io/badge/Go-%3E%3D%201.21-%23007d9c)
-[![GoDoc](https://godoc.org/github.com/j0urneyK/oops?status.svg)](https://pkg.go.dev/github.com/j0urneyK/oops)
-![Build Status](https://github.com/j0urneyK/oops/actions/workflows/test.yml/badge.svg)
-[![Go report](https://goreportcard.com/badge/github.com/j0urneyK/oops)](https://goreportcard.com/report/github.com/j0urneyK/oops)
+[![GoDoc](https://godoc.org/github.com/j0urneyk/oops?status.svg)](https://pkg.go.dev/github.com/j0urneyk/oops)
+![Build Status](https://github.com/j0urneyk/oops/actions/workflows/test.yml/badge.svg)
+[![Go report](https://goreportcard.com/badge/github.com/j0urneyk/oops)](https://goreportcard.com/report/github.com/j0urneyk/oops)
 [![Coverage](https://img.shields.io/codecov/c/github/samber/oops)](https://codecov.io/gh/samber/oops)
-[![Contributors](https://img.shields.io/github/contributors/samber/oops)](https://github.com/j0urneyK/oops/graphs/contributors)
+[![Contributors](https://img.shields.io/github/contributors/samber/oops)](https://github.com/j0urneyk/oops/graphs/contributors)
 [![License](https://img.shields.io/github/license/samber/oops)](./LICENSE)
 
 (Yet another) error handling library: `oops.Errorf` is a dead-simple drop-in replacement for built-in `error`, adding contextual information such as stack trace, extra attributes, error code, and bug-fixing hints...
@@ -23,7 +23,7 @@
   <br>
   <a href="https://quickwit.io?utm_campaign=github_sponsorship&utm_medium=referral&utm_content=samber-oops&utm_source=github">
     <div>
-      <img src="https://github.com/j0urneyK/oops/assets/2951285/49aaaa2b-b8c6-4f21-909f-c12577bb6a2e" width="240" alt="Quickwit">
+      <img src="https://github.com/j0urneyk/oops/assets/2951285/49aaaa2b-b8c6-4f21-909f-c12577bb6a2e" width="240" alt="Quickwit">
     </div>
     <div>
       Cloud-native search engine for observability - An OSS alternative to Splunk, Elasticsearch, Loki, and Tempo.
@@ -171,7 +171,7 @@ Yes. Me too.
 ## 🚀 Install
 
 ```sh
-go get github.com/j0urneyK/oops
+go get github.com/j0urneyk/oops
 ```
 
 This library is v1 and follows SemVer strictly.
@@ -190,7 +190,7 @@ Since `oops.OopsError` implements the `error` interface, you will be able to com
 
 ## 🧠 Spec
 
-GoDoc: [https://godoc.org/github.com/j0urneyK/oops](https://godoc.org/github.com/j0urneyK/oops)
+GoDoc: [https://godoc.org/github.com/j0urneyk/oops](https://godoc.org/github.com/j0urneyk/oops)
 
 ### Error constructors
 
@@ -556,10 +556,10 @@ func main() {
 Some loggers may need a custom formatter to extract attributes from `oops.OopsError`.
 
 Available loggers:
-- log: [playground](https://go.dev/play/p/uNx3CcT-X40) - [example](https://github.com/j0urneyK/oops/tree/master/examples/log)
-- slog: [playground](https://go.dev/play/p/-X2ZnqjyDLu) - [example](https://github.com/j0urneyK/oops/tree/master/examples/slog)
-- logrus: [formatter](https://github.com/j0urneyK/oops/tree/master/loggers/logrus) - [playground](https://go.dev/play/p/-_7EBnceJ_A) - [example](https://github.com/j0urneyK/oops/tree/master/examples/logrus)
-- zerolog: [formatter](https://github.com/j0urneyK/oops/tree/master/loggers/zerolog) - [playground](https://go.dev/play/p/aalqQ6wEDyx) - [example](https://github.com/j0urneyK/oops/tree/master/examples/zerolog)
+- log: [playground](https://go.dev/play/p/uNx3CcT-X40) - [example](https://github.com/j0urneyk/oops/tree/master/examples/log)
+- slog: [playground](https://go.dev/play/p/-X2ZnqjyDLu) - [example](https://github.com/j0urneyk/oops/tree/master/examples/slog)
+- logrus: [formatter](https://github.com/j0urneyk/oops/tree/master/loggers/logrus) - [playground](https://go.dev/play/p/-_7EBnceJ_A) - [example](https://github.com/j0urneyk/oops/tree/master/examples/logrus)
+- zerolog: [formatter](https://github.com/j0urneyk/oops/tree/master/loggers/zerolog) - [playground](https://go.dev/play/p/aalqQ6wEDyx) - [example](https://github.com/j0urneyk/oops/tree/master/examples/zerolog)
 
 We are looking for contributions and examples for:
 - zap
@@ -726,8 +726,8 @@ func d() error {
 ## 🤝 Contributing
 
 - Ping me on Twitter [@samuelberthe](https://twitter.com/samuelberthe) (DMs, mentions, whatever :))
-- Fork the [project](https://github.com/j0urneyK/oops)
-- Fix [open issues](https://github.com/j0urneyK/oops/issues) or request new features
+- Fork the [project](https://github.com/j0urneyk/oops)
+- Fix [open issues](https://github.com/j0urneyk/oops/issues) or request new features
 
 Don't hesitate ;)
 
