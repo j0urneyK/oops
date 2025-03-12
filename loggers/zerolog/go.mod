@@ -5,8 +5,8 @@ go 1.21
 replace github.com/j0urneyk/oops => ../..
 
 require (
-	github.com/rs/zerolog v1.31.0
 	github.com/j0urneyk/oops v0.0.0
+	github.com/rs/zerolog v1.31.0
 	github.com/stretchr/testify v1.10.0
 )
 
