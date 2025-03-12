@@ -3,11 +3,12 @@ package oopszerolog
 import (
 	"bytes"
 	"encoding/json"
+	"testing"
+
+	"github.com/j0urneyK/oops"
 	"github.com/rs/zerolog"
-	"github.com/samber/oops"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	"testing"
 )
 
 type jsonLogEntryError struct {

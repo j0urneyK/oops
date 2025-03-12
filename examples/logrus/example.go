@@ -3,8 +3,8 @@ package main
 import (
 	"time"
 
-	"github.com/samber/oops"
-	oopslogrus "github.com/samber/oops/loggers/logrus"
+	"github.com/j0urneyK/oops"
+	oopslogrus "github.com/j0urneyK/oops/loggers/logrus"
 	"github.com/sirupsen/logrus"
 )
 

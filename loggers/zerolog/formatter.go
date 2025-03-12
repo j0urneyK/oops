@@ -1,8 +1,8 @@
 package oopszerolog
 
 import (
+	"github.com/j0urneyK/oops"
 	"github.com/rs/zerolog"
-	"github.com/samber/oops"
 )
 
 func OopsStackMarshaller(err error) interface{} {

@@ -1,7 +1,7 @@
 # Zerolog formatter for Oops
 
 ```go
-import oopszerolog "github.com/samber/oops/loggers/zerolog"
+import oopszerolog "github.com/j0urneyK/oops/loggers/zerolog"
 
 func init() {
 	zerolog.ErrorStackMarshaler = oopszerolog.OopsStackMarshaller

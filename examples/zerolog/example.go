@@ -4,9 +4,9 @@ import (
 	"os"
 	"time"
 
+	"github.com/j0urneyK/oops"
+	oopszerolog "github.com/j0urneyK/oops/loggers/zerolog"
 	"github.com/rs/zerolog"
-	"github.com/samber/oops"
-	oopszerolog "github.com/samber/oops/loggers/zerolog"
 )
 
 // go run examples/zerolog/example.go 2>&1 | jq

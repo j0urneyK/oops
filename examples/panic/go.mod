@@ -1,4 +1,4 @@
-module github.com/samber/oops/examples/panic
+module github.com/j0urneyK/oops/examples/panic
 
 go 1.21
 

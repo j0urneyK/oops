@@ -1,4 +1,4 @@
-module github.com/samber/oops/examples/segfault
+module github.com/j0urneyK/oops/examples/segfault
 
 go 1.21
 

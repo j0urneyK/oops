@@ -1,4 +1,4 @@
-module github.com/samber/oops
+module github.com/j0urneyK/oops
 
 go 1.21
 

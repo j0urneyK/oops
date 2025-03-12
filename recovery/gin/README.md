@@ -1,7 +1,7 @@
 # Logrus formatter for Oops
 
 ```go
-import oopsrecoverygin "github.com/samber/oops/recovery/gin"
+import oopsrecoverygin "github.com/j0urneyK/oops/recovery/gin"
 
 func main() {
 	router = gin.New()

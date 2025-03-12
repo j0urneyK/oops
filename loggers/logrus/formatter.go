@@ -3,7 +3,7 @@ package oopslogrus
 import (
 	"errors"
 
-	"github.com/samber/oops"
+	"github.com/j0urneyK/oops"
 	"github.com/sirupsen/logrus"
 )
 

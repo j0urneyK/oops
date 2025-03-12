@@ -2,12 +2,11 @@ package main
 
 import (
 	"fmt"
+	"log/slog"
 	"os"
 	"time"
 
-	"log/slog"
-
-	"github.com/samber/oops"
+	"github.com/j0urneyK/oops"
 )
 
 // go run examples/sources/example.go | jq .error.sources -r

@@ -4,7 +4,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/samber/oops"
+	"github.com/j0urneyK/oops"
 )
 
 // go run examples/log/example.go

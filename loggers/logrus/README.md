@@ -1,7 +1,7 @@
 # Logrus formatter for Oops
 
 ```go
-import oopslogrus "github.com/samber/oops/loggers/logrus"
+import oopslogrus "github.com/j0urneyK/oops/loggers/logrus"
 
 func init() {
     logrus.SetFormatter(
